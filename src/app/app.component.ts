@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    template: `
+        <h4>{{ pageTitle }}</h4>
+    `
 })
+
 export class AppComponent {
-  title = 'app';
+    pageTitle: string =  'Welcome to the my TOC';
 }
